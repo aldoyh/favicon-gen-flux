@@ -1,10 +1,10 @@
 #!/bin/bash
 
-#
 # Favicon and Apple Touch Icon Generator
 #
 # This bash script takes an image as a parameter, and uses ImageMagick to convert it to several
 # other formats used on modern websites. The following copies are generated:
+# 
 # * apple-touch-icon-114x114-precomposed.png
 # * apple-touch-icon-57x57-precomposed.png
 # * apple-touch-icon-72x72-precomposed.png
@@ -12,6 +12,7 @@
 # * apple-touch-icon.png
 # * favicon.ico
 #
+# Concept from http://bergamini.org/computers/creating-favicon.ico-icon-files-with-imagemagick-convert.html
 
 CONVERT_CMD=`which convert`
 SRC_IMAGE=$1
