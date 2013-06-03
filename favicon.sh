@@ -5,6 +5,7 @@
 # This bash script takes an image as a parameter, and uses ImageMagick to convert it to several
 # other formats used on modern websites. The following copies are generated:
 # 
+# * apple-touch-icon-144x144-precomposed.png
 # * apple-touch-icon-114x114-precomposed.png
 # * apple-touch-icon-57x57-precomposed.png
 # * apple-touch-icon-72x72-precomposed.png
@@ -54,6 +55,7 @@ cp $PWD/apple-touch-icon.png $PWD/apple-touch-icon-precomposed.png
 cp $PWD/apple-touch-icon.png $PWD/apple-touch-icon-57x57-precomposed.png
 $CONVERT_CMD $PWD/favicon-256.png -resize 72x72 $PWD/apple-touch-icon-72x72-precomposed.png
 $CONVERT_CMD $PWD/favicon-256.png -resize 114x114 $PWD/apple-touch-icon-114x114-precomposed.png
+$CONVERT_CMD $PWD/favicon-256.png -resize 144x144 $PWD/apple-touch-icon-144x144-precomposed.png
 
 echo "Removing temp files"
 rm -rf $PWD/favicon-16.png
