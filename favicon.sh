@@ -14,6 +14,9 @@
 # * favicon.ico
 #
 # Concept from http://bergamini.org/computers/creating-favicon.ico-icon-files-with-imagemagick-convert.html
+# With some inspiration from https://github.com/retifrav/generate-iconset.git
+# Customized by Hasan Aldoy <https://github.com/aldoyh>
+# Created to make your life easier with @inspireui artworks!
 
 CONVERT_CMD=`which convert`
 SRC_IMAGE=$1
